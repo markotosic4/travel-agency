@@ -1,0 +1,123 @@
+header {
+    display: grid;
+  }
+  
+  #navToggle,
+  .nav-toggle__icon,
+  .nav {
+    position: absolute;
+    right: 0;
+  }
+  
+  #navToggle {
+    height: 5rem;
+    opacity: 0;
+    width: 5rem;
+  
+    &:checked ~ .nav {
+      position: fixed;
+      top: 0;
+      transform: translateX(0);
+    }
+  
+    &:checked ~ .nav-toggle__icon {
+      position: fixed;
+    }
+  }
+  
+  .nav-toggle__icon {
+      cursor: pointer;
+      padding: 2rem;
+      right: 2.4rem;
+      top: 4.4rem;
+      z-index: 2;
+  
+      &-span {
+        background-color: #000000;
+        display: block;
+        height: 1.5px;
+        width: 3.5rem;
+    
+        &::before,
+        &::after {
+          background-color: #000000;
+          content: '';
+          height: 1.5px;
+          position: absolute;
+          width: 3.5rem;
+        }
+    
+        &::before {
+          top: 1.2rem;
+        }
+    
+        &::after {
+          bottom: 1.2rem;
+        }
+      }
+  
+     
+    }
+  
+  
+    .nav {
+      align-items: center;
+      background: url('../images/bg-nav.jpg')  no-repeat;
+    
+    background-size: cover;
+   
+      
+      display: grid;
+      height: 100vh;
+      justify-items: center;
+      transform: translateY(-100%);
+      transition:  .35s linear;
+      width: 100vw;
+      z-index: 1;
+    
+      &__links {
+        display: grid;
+        justify-items: center;
+        gap: 4.9rem;
+        color: #fff;
+        letter-spacing: .5px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        font-weight: 700;
+        //line-height: 1.6rem;
+    
+    
+      }
+    
+      &__link {
+        color: #fff;
+         
+      
+    
+        &::after {
+          background-color: #fff;
+          bottom: -5px;
+          content: '';
+          height: 2px;
+          left: 0;
+          position: absolute;
+          transform: translateX(-100%) scale(0);
+          transition: .2s linear;
+          width: 100%;
+        }
+    
+        &:hover {
+          color: $nav-link-active-color;
+        }
+      }
+    }
+    
+  
+    .header__logo__img{
+      top: 4.5rem;
+      position: absolute;
+    left: 4.5rem;
+    
+    }
