@@ -145,3 +145,30 @@ header {
     text-transform: capitalize;
     color: #FFFFFF;
     opacity: 60%; }
+
+.about {
+  display: grid;
+  gap: 8.2rem;
+  justify-content: center;
+  margin-top: 8.2rem;
+  margin-bottom: 8.2rem; }
+  .about__content {
+    border-radius: 50%;
+    border: 1px solid rgba(113, 113, 113, 0.15);
+    width: 34rem;
+    height: 34rem;
+    text-align: center;
+    align-self: center; }
+    .about__content__container {
+      padding: 5.1rem; }
+    .about__content__title {
+      color: #2E3B48;
+      font-size: 2.4rem;
+      text-transform: capitalize;
+      margin-bottom: 1.6rem; }
+    .about__content__text {
+      color: #3D3D3D;
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 500;
+      line-height: 3.2rem; }
