@@ -172,3 +172,87 @@ header {
       text-align: center;
       font-weight: 500;
       line-height: 3.2rem; }
+
+.tours {
+  display: grid;
+  gap: 4.9rem;
+  justify-content: center;
+  justify-items: center; }
+  .tours__title {
+    font-size: 3.2rem;
+    color: #484848;
+    text-transform: capitalize; }
+  .tours__card {
+    width: 34rem;
+    height: 42.5rem;
+    border-radius: 3.5rem;
+    display: grid;
+    align-content: end; }
+    .tours__card-1 {
+      background: url("../images/img/tours__photo-1.jpg") no-repeat;
+      background-size: cover; }
+    .tours__card-2 {
+      background: url("../images/img/tours__photo-2.jpg") no-repeat;
+      background-size: cover; }
+    .tours__card-3 {
+      background: url("../images/img/tours__photo-3.jpg") no-repeat;
+      background-size: cover; }
+    .tours__card__btn {
+      font-size: 1.5rem;
+      border: none;
+      width: 11.4rem;
+      height: 4.2rem;
+      border-radius: 4.7rem;
+      background-color: #8DD3BB;
+      color: #484848;
+      text-transform: uppercase;
+      justify-self: end; }
+      .tours__card__btn:hover {
+        background-color: #A8F0D7; }
+    .tours__card__details {
+      background: #FFF;
+      width: 34rem;
+      height: 17.3rem;
+      border-radius: 0 0 3.3rem 3.3rem;
+      display: grid; }
+      .tours__card__details__container {
+        display: grid;
+        width: 27.3rem;
+        height: 12.2rem;
+        justify-self: center;
+        margin-top: 2.3rem;
+        margin-bottom: 2.7rem; }
+      .tours__card__details__name {
+        font-size: 1.6rem;
+        color: #2E3B48; }
+      .tours__card__details__location {
+        color: #656262;
+        font-size: 1.6rem;
+        letter-spacing: 0.1rem; }
+      .tours__card__details__price {
+        color: #FF5722;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        justify-self: end;
+        position: relative;
+        top: -38px; }
+      .tours__card__details__rating {
+        display: flex; }
+        .tours__card__details__rating-star {
+          position: relative;
+          right: -1.1rem; }
+        .tours__card__details__rating p {
+          font-size: 1.88rem;
+          color: #FF5722;
+          font-weight: 800; }
+  .tours__btn {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.9rem;
+    border-radius: 4.7rem;
+    border: 1px solid #3D3D3D;
+    color: #3D3D3D;
+    width: 24.4rem;
+    position: relative;
+    bottom: 1rem; }
