@@ -1,0 +1,69 @@
+#subscribe {
+    display: grid;
+    justify-items: center;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.3rem;
+    background: url('../images/bg--subscribe.jpg')  no-repeat;
+    background-size: cover;
+    color: $white;
+}
+
+.subscribe {
+    &__title {
+        font-size: 2.4rem;
+        margin-bottom: 3.9rem;
+    }
+
+    &__form{
+        display: grid;
+        justify-items: center;
+        font-size: 2rem;
+        margin-bottom: 7.6rem;
+    }
+
+    &__btn {
+        border-radius: 4.7rem;
+        padding: 1.6rem 5rem 1.6rem 5rem;
+        background-color: $btn-color2;
+        border: none;
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+fieldset{
+    display: grid;
+    
+    border: none;
+    legend{
+        display: grid;
+        justify-self: center;
+        text-align: center;
+        margin-bottom: 6.2rem;
+        width: 85%;
+        //margin-right: 2rem;
+       
+    }
+    input {
+        border: none;
+        background:none;
+        padding-bottom: 1.7rem;
+        padding-left: 1.9rem;
+        border-bottom: 2px solid $white;
+        width: 90vw;
+        font-size: 2rem;
+
+        
+    }
+}
+
+::placeholder{
+    color: $white;
+    opacity: 0.46;
+   // padding: 50px;
+    //margin: 50px;    
+}
